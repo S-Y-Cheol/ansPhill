@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--하단 네비게이션 바 관련-->
+    <style name="nav_bar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:elevation">30dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="nav_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="nav_button">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!--네비게이션 버튼 각 이미지 및 색 정보-->
+    <style name="nav_button.home">
+        <item name="android:background">@drawable/homei</item>
+        <item name="backgroundTint">@color/mainColor</item>
+    </style>
+    <style name="nav_button.compare">
+        <item name="android:background">@drawable/comparei</item>
+        <item name="backgroundTint">@color/mainColor</item>
+    </style>
+    <style name="nav_button.recom">
+        <item name="android:background">@drawable/recomandi</item>
+        <item name="backgroundTint">@color/mainColor</item>
+    </style>
+    <style name="nav_button.manage">
+        <item name="android:background">@drawable/managei</item>
+        <item name="backgroundTint">@color/mainColor</item>
+    </style>
+    <style name="nav_button.my">
+        <item name="android:background">@drawable/myi</item>
+        <item name="backgroundTint">@color/mainColor</item>
+    </style>
+
+
+    <style name="back">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/backspace_icon</item>
+        <item name="android:padding">0dp</item>
+        <item name="backgroundTint">@color/black</item>
+    </style>
+
+    <style name="search_icon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:background">@drawable/searchicon</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="search_rmTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="search_rmIcon">
+        <item name="android:layout_width">10dp</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:background">@drawable/close_icon</item>
+        <item name="android:backgroundTint">@color/mainColor</item>
+    </style>
+    <style name="search_keyword">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginHorizontal">5dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:paddingVertical">5dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

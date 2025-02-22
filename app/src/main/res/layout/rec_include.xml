@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rec_include"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rec_hCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="상위 카테고리"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rec_cateArrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/arrow_forward_icon"
+        android:backgroundTint="@color/mainColor"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_hCategory"
+        app:layout_constraintStart_toEndOf="@+id/rec_hCategory"
+        app:layout_constraintTop_toTopOf="@+id/rec_hCategory" />
+
+    <TextView
+        android:id="@+id/rec_lCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="하위 카테고리"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/rec_cateArrow"
+        app:layout_constraintTop_toTopOf="@+id/rec_hCategory" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/round_button_line"
+        android:padding="0dp"
+        android:text="연령대별"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_lCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rec_lCategory" />
+
+    <TextView
+        android:id="@+id/rec_cateSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="음식을 먹고 소화가 잘 안되요"
+
+        app:layout_constraintEnd_toEndOf="@+id/rec_lCategory"
+        app:layout_constraintStart_toStartOf="@+id/rec_hCategory"
+        app:layout_constraintTop_toBottomOf="@+id/rec_hCategory" />
+
+    <HorizontalScrollView
+        android:id="@+id/rec_list"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_cateSubtitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/rec_img1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/mainColor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rec_img1Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="칼슘 마그네슘 아연 비타민D"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/rec_img1"
+                    app:layout_constraintStart_toStartOf="@+id/rec_img1"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_img1" />
+
+                <View
+                    android:id="@+id/rec_img2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@color/mainColor"
+                    app:layout_constraintStart_toEndOf="@+id/rec_img1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rec_img2Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="락티브 우리아이 칼마디"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/rec_img2"
+                    app:layout_constraintStart_toStartOf="@+id/rec_img2"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_img2" />
+
+                <View
+                    android:id="@+id/rec_img3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/mainColor"
+                    app:layout_constraintStart_toEndOf="@+id/rec_img2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rec_img3Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="칼슘 마그네슘 아연 비타민D"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/rec_img3"
+                    app:layout_constraintStart_toStartOf="@+id/rec_img3"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_img3" />
+
+                <View
+                    android:id="@+id/rec_img4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/mainColor"
+                    app:layout_constraintStart_toEndOf="@+id/rec_img3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rec_img4Desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="락티브 우리아이 칼마디"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/rec_img4"
+                    app:layout_constraintStart_toStartOf="@+id/rec_img4"
+                    app:layout_constraintTop_toBottomOf="@+id/rec_img4" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

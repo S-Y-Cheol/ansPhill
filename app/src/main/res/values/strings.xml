@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ansPhill</string>
+    <string name="main_title">건강한 바른 습관\n<b>한알비교</b></string>
+    <string name="search_ingred"><b>성분</b>으로 <b>검색</b>하기</string>
+    <string name="search_func"><b>기능</b>으로 <b>검색</b>하기</string>
+    <string name="cate_title"><font color="#00b5b5"><b>Selected*</b></font> 고민 해결 <b>불편한 점을 눌러주세요!</b></string>
+    <string name="rec_title">오직 <b>User*</b>님을 위한\n<b>추천 영양제</b></string>
+    <string name="manage_title">
+        드시는 <b>영양제</b>를 <b>등록</b>하세요!\n
+        가장 <b>효과적인 섭취시간</b>을 알려드릴게요!
+    </string>
+    <string name="ex1"><b>임산부</b>(배우자)</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nav_nav"
+        style="@style/nav_bar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nav_nav_const"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/nav_home"
+                style="@style/nav_button.home"
+                app:layout_constraintEnd_toStartOf="@+id/nav_compare"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nav_home_txt"
+                style="@style/nav_text"
+                android:text="홈"
+                app:layout_constraintEnd_toEndOf="@+id/nav_home"
+                app:layout_constraintStart_toStartOf="@+id/nav_home"
+                app:layout_constraintTop_toBottomOf="@+id/nav_home" />
+
+            <Button
+                android:id="@+id/nav_compare"
+                style="@style/nav_button.compare"
+                app:layout_constraintEnd_toStartOf="@+id/nav_recom"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/nav_home"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nav_compare_txt"
+                style="@style/nav_text"
+                android:text="비교"
+                app:layout_constraintEnd_toEndOf="@+id/nav_compare"
+                app:layout_constraintStart_toStartOf="@+id/nav_compare"
+                app:layout_constraintTop_toBottomOf="@+id/nav_compare" />
+
+            <Button
+                android:id="@+id/nav_recom"
+                style="@style/nav_button.recom"
+                app:layout_constraintEnd_toStartOf="@+id/nav_manage"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/nav_compare"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nav_recom_txt"
+                style="@style/nav_text"
+                android:text="추천"
+                app:layout_constraintEnd_toEndOf="@+id/nav_recom"
+                app:layout_constraintStart_toStartOf="@+id/nav_recom"
+                app:layout_constraintTop_toBottomOf="@+id/nav_recom" />
+
+            <Button
+                android:id="@+id/nav_manage"
+                style="@style/nav_button.manage"
+                app:layout_constraintEnd_toStartOf="@+id/nav_my"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/nav_recom"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nav_manage_txt"
+                style="@style/nav_text"
+                android:text="섭취관리"
+                app:layout_constraintEnd_toEndOf="@+id/nav_manage"
+                app:layout_constraintStart_toStartOf="@+id/nav_manage"
+                app:layout_constraintTop_toBottomOf="@+id/nav_manage" />
+
+            <Button
+                android:id="@+id/nav_my"
+                style="@style/nav_button.my"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/nav_manage"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nav_my_txt"
+                style="@style/nav_text"
+                android:text="my"
+                app:layout_constraintEnd_toEndOf="@+id/nav_my"
+                app:layout_constraintStart_toStartOf="@+id/nav_my"
+                app:layout_constraintTop_toBottomOf="@+id/nav_my" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    7
+
+</androidx.constraintlayout.widget.ConstraintLayout>

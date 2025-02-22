@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/personal_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/personal_scroll_const"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/personal_lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_genderTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="성별"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_genderGroup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_genderTitle">
+
+                            <RadioButton
+                                android:id="@+id/personal_genderM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="남성"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_genderF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="여성"
+                                android:textSize="18sp" />
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line1"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal_lay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="30dp"
+
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay1">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_secondTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="@string/ex1"
+                            android:textSize="24sp"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_secondGroup"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_secondTitle">
+
+                            <RadioButton
+                                android:id="@+id/personal_secondT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="해당"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_secondF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="해당 없음"
+                                android:textSize="18sp" />
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line2"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal_lay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay2">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_Title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="운동습관"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_Group3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_Title3">
+
+                            <RadioButton
+                                android:id="@+id/personal_31"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="자주"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="보통"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="가끔"
+                                android:textSize="18sp" />
+
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line3"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal_lay4"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay3">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_Title4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Ex1"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_Group4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_Title4">
+
+                            <RadioButton
+                                android:id="@+id/personal_41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="radio1"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_42"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="radio2"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_43"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="radio3"
+                                android:textSize="18sp" />
+
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line4"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal_lay5"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay4">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_Title5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Ex2"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_Group5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_Title5">
+
+                            <RadioButton
+                                android:id="@+id/personal_51"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="slect1"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_52"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="selec2"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_53"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="select3"
+                                android:textSize="18sp" />
+
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line5"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personal_lay6"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay5">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/personal_const6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/personal_Title6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:text="Ex3"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioGroup
+                            android:id="@+id/personal_Group6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:orientation="horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/personal_Title6">
+
+                            <RadioButton
+                                android:id="@+id/personal_61"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:text="first"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_62"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="second"
+                                android:textSize="18sp" />
+
+                            <RadioButton
+                                android:id="@+id/personal_63"
+                                android:layout_width="wrap_content"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="50dp"
+                                android:text="third"
+                                android:textSize="18sp" />
+
+                        </RadioGroup>
+
+                        <View
+                            android:id="@+id/personal_line6"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="#cbd3d3"
+                            android:padding="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <!--하단 여백을 위한 투명 블록-->
+                <View
+                    android:id="@+id/personal_layEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#00000000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/personal_lay6"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
